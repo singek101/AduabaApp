@@ -22,7 +22,7 @@ namespace Aduaba.Models
 
         [Required]
         [MaxLength(3)]
-        public string CCV { get; set; }
+        public string CVV { get; set; }
 
         public virtual ApplicationUser ApplicationUser { get; set; }
 

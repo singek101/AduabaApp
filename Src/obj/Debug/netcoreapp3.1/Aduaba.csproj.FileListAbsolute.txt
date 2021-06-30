@@ -1,0 +1,8 @@
+C:\Users\Bernice\Desktop\project\Src\obj\Debug\netcoreapp3.1\Aduaba.csproj.AssemblyReference.cache
+C:\Users\Bernice\Desktop\project\Src\obj\Debug\netcoreapp3.1\Aduaba.AssemblyInfoInputs.cache
+C:\Users\Bernice\Desktop\project\Src\obj\Debug\netcoreapp3.1\Aduaba.AssemblyInfo.cs
+C:\Users\Bernice\Desktop\project\Src\obj\Debug\netcoreapp3.1\Aduaba.csproj.CoreCompileInputs.cache
+C:\Users\Bernice\Desktop\project\Src\obj\Debug\netcoreapp3.1\Aduaba.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Bernice\Desktop\project\Src\obj\Debug\netcoreapp3.1\Aduaba.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Bernice\Desktop\project\Src\obj\Debug\netcoreapp3.1\Aduaba.dll
+C:\Users\Bernice\Desktop\project\Src\obj\Debug\netcoreapp3.1\Aduaba.pdb
