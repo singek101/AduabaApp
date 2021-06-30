@@ -22,6 +22,7 @@ namespace Aduaba.Models
 
         [Required]
         public DateTime OrderDate { get; set; }
+        public DateTime? ShipDate { get; set; }
 
         //public virtual ShippingAddress ShippingAddress { get; set; }
 
