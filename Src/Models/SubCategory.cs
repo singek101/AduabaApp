@@ -7,6 +7,8 @@ namespace Aduaba.Models
     {
         [Key]
         public int Id { get; set; }
+        public virtual Category Category { get; set; }
+        public int categoryId { get; set; }
 
         [Required]
         public string Name { get; set; }

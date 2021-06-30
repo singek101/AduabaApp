@@ -6,7 +6,7 @@ namespace Aduaba.Models
     public class Product
     {
         [Key]
-        public string Id { get; set; }
+        public int Id { get; set; }
 
         [Required]
         public string Name { get; set; }
@@ -21,11 +21,8 @@ namespace Aduaba.Models
 
         [Required]
         public string CategoryId { get; set; }
-
-        public string SubCategory { get; set; }
-
-        
-
+        public virtual SubCategory SubCategory { get; set; }
+        public int  SubCategoryId { get; set; }
         [Required]
         public int VendorId { get; set; }
 

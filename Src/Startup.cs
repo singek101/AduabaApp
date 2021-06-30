@@ -1,7 +1,9 @@
 using Aduaba.Data;
 using Aduaba.Models;
 using Aduaba.Services;
+using Aduaba.Services.Interfaces;
 using Aduaba.Setings;
+using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -35,6 +37,7 @@ namespace Aduaba
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            //services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             //Configuration from AppSettings
             services.Configure<JWT>(Configuration.GetSection("JWT"));
@@ -42,6 +45,9 @@ namespace Aduaba
             services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddScoped<IUserServices, UserServices>();
             services.AddScoped<IAuthenticatedUserService, AuthenticatedUserService>();
+            services.AddScoped<ICategoryServices, CategoryServices>();
+            services.AddScoped<ISubCategoryServices, SubCategoryServices>();
+            services.AddScoped<IProductServices, ProductServices>();
             //Adding DB Context with MSSQL
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
